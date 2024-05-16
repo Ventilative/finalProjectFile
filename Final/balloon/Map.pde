@@ -46,7 +46,7 @@ public class Map{
   
   private int solve(int row, int col){
     if (map[row][col] == 'E') {return 0;}
-    if (map[row][col] == '#') {return -1;}
+    if (map[row][col] == '#' || map[row][col] == 'F') {return -1;}
     if (map[row][col] == '@') {return -1;}
     if (map[row][col] == '.') {return -1;}
     else {
